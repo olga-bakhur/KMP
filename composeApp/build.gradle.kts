@@ -86,6 +86,8 @@ android {
     dependencies {
         debugImplementation(compose.uiTooling)
     }
+
+    tasks.create("testClasses")
 }
 
 compose.desktop {
