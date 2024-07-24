@@ -70,8 +70,11 @@ kotlin {
             api(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
-            implementation(libs.lifecycle.viewmodel)
             implementation(libs.navigation.compose)
+
+            // ViewModel
+            implementation(libs.lifecycle.viewmodel)
+            implementation(libs.lifecycle.viewmodel.compose)
 
             // Ktor
             implementation(libs.bundles.ktor)
@@ -79,6 +82,10 @@ kotlin {
             // Preferences DataStore
             api(libs.datastore.preferences)
             api(libs.datastore)
+
+            // Permissions
+            api(libs.moko.permissions)
+            api(libs.moko.permissions.compose)
         }
         nativeMain.dependencies {
             // Ktor
