@@ -75,6 +75,10 @@ kotlin {
 
             // Ktor
             implementation(libs.bundles.ktor)
+
+            // Preferences DataStore
+            api(libs.datastore.preferences)
+            api(libs.datastore)
         }
         nativeMain.dependencies {
             // Ktor
