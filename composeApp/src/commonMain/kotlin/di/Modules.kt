@@ -1,8 +1,8 @@
 package di
 
-import dependencies.MyRepository
-import dependencies.MyRepositoryImpl
-import dependencies.MyViewModel
+import data.repository.MyRepository
+import domain.repositoryImpl.MyRepositoryImpl
+import presentation.viewModel.MyViewModel
 import org.koin.compose.viewmodel.dsl.viewModelOf
 import org.koin.core.module.Module
 import org.koin.core.module.dsl.singleOf
